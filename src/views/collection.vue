@@ -16,7 +16,7 @@
         },
         beforeRouteEnter (to, from, next) {
     if (localStorage.getItem('token')) {
-      next('/collection')
+      next()
     } else {
       alert('veillez vous connectez')
       next('/login')

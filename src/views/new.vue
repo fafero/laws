@@ -26,7 +26,7 @@
         },
         beforeRouteEnter (to, from, next) {
     if (localStorage.getItem('token')) {
-      next('/new')
+      next()
     } else {
       alert('bienvenu au home')
       next('/login')
